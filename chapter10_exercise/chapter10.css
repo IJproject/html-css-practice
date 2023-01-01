@@ -19,7 +19,6 @@ main {
 section {
   width: 300px;
   padding: 10px;
-  padding-bottom: 0;
   background-color: #eee;
   position: relative;
   margin-right: 30px;
@@ -64,7 +63,7 @@ section:nth-child(3) {
 }
 
 h3 {
-  margin: 5px 0;
+  margin: 15px 0 5px 0;
 }
 
 .gray-bar {
@@ -74,5 +73,22 @@ h3 {
 }
 
 @media screen and (max-width:768px) {
+  main {
+    width: 100%;
+    display: block;
+  }
 
+  section {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  section:nth-child(3) {
+    margin: 0 auto;
+  }
+
+  .image {
+    width: 100%;
+  }
 }
